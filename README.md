@@ -23,7 +23,7 @@ Welcome to the Portfolio Website Examples repository! Here, you'll find a variet
 ### 3. **Portfolio v3**
 
 - **Description:** -
-- **Technologies:** HTML, Tailwind, JavaScript
+- **Technologies:** HTML, Tailwind
 - **Link:** [Portfolio v3](https://github.com/Aditypraa/My-Portfolio/tree/portofolio_v3)
 - **Preview:**
   ![Portfolio v3](https://private-user-images.githubusercontent.com/95411404/355601112-7ed27b0b-3209-433f-9fcb-c84066002c8a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI5Nzg0NzYsIm5iZiI6MTcyMjk3ODE3NiwicGF0aCI6Ii85NTQxMTQwNC8zNTU2MDExMTItN2VkMjdiMGItMzIwOS00MzNmLTlmY2ItYzg0MDY2MDAyYzhhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA2VDIxMDI1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk4ZWM3MGY5MTMxNTMzZmEyOTQzNzg1MDdmODE3NDcwYTk3ZThhNDRhNGYzODJhNDg2OTg4YzM3MTg4NmE5N2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.r33ZOARwgZ53STVas8nCwGfk29OENrza-g7N7_1Wia8)
