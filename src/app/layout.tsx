@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="aditypraa.svg" type="image/svg+xml" />
+      </head>
       <body
         className={twMerge(
           inter.variable,
