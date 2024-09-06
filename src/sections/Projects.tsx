@@ -5,6 +5,7 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import GithubIcon from "@/assets/icons/github.svg";
 
 const portfolioProjects = [
   {
@@ -17,6 +18,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
+    repository: "",
     image: darkSaasLandingPage,
   },
   {
@@ -29,6 +31,7 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
+    repository: "",
     image: lightSaasLandingPage,
   },
   {
@@ -41,6 +44,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
+    repository: "",
     image: aiStartupLandingPage,
   },
 ];
@@ -98,12 +102,21 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
+                  <div className="flex justify-center md:gap-4 sm:gap-2">
+                    <a href={project.link}>
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
+                        <span>Website</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
+
+                    <a href={project.repository}>
+                      <button className="bg-black text-white-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
+                        <span>GitHub</span>
+                        <GithubIcon className="size-4 ml-2" />
+                      </button>
+                    </a>
+                  </div>
                 </div>
 
                 <div className="relative">
