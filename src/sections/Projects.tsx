@@ -1,7 +1,10 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
+import artistryAgoraImage from "@/assets/images/Artistryagora.png";
+import miniProjectImage from "@/assets/images/miniproject.png";
+import hydroSenseImage from "@/assets/images/hydrosense.png";
+import agrisightImage from "@/assets/images/agrisight.png";
+import resepMakananImage from "@/assets/images/resepmakanan.png";
+import websiteDesaImage from "@/assets/images/websitedesa.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
@@ -9,43 +12,72 @@ import GithubIcon from "@/assets/icons/github.svg";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    repository: "",
-    image: darkSaasLandingPage,
+    company: "---",
+    year: "2024",
+    title: "Artistry Agora",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "https://artistryagora.vercel.app",
+    repository: "https://github.com/Aditypraa/Nextjs-Landingpage-Artistryagora",
+    image: artistryAgoraImage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "-----",
+    year: "2024",
+    title: "HydroSense",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "",
+    repository: "https://github.com/PalapaPixel",
+    image: hydroSenseImage,
+  },
+  {
+    company: "----",
+    year: "2023",
+    title: "Agrisight",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "",
+    repository: "https://github.com/Aditypraa/Agrisight",
+    image: agrisightImage,
+  },
+  {
+    company: "----",
+    year: "2023",
+    title: "Mini Project Ideas",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    repository: "",
-    image: lightSaasLandingPage,
+    link: "https://aditypraa.github.io/Mini-Project",
+    repository: "https://github.com/Aditypraa/Mini-Project",
+    image: miniProjectImage,
   },
   {
-    company: "Quantum Dynamics",
+    company: "-----",
     year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    repository: "",
-    image: aiStartupLandingPage,
+    title: "Website Desa",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "",
+    repository: "https://github.com/Aditypraa/Laravel-WebDesa",
+    image: websiteDesaImage,
+  },
+  {
+    company: "-----",
+    year: "2023",
+    title: "E Safety",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "",
+    repository: "https://github.com/Aditypraa/Flutter-E-safety",
+    image: "",
+  },
+
+  {
+    company: "----",
+    year: "2022",
+    title: "Resep Makanan",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "",
+    repository: "https://github.com/Aditypraa/Flutter-ResepMakanan",
+    image: resepMakananImage,
   },
 ];
 
@@ -55,11 +87,11 @@ export const ProjectsSection = () => {
       <div className="container">
         <div className="flex justify-center ">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
-            Real-word Results
+            Real-world Results
           </p>
         </div>
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
-          Featured Projects
+          Projects
         </h2>
         <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           See how I transformed concepts into engaging digital experiences.
@@ -105,7 +137,7 @@ export const ProjectsSection = () => {
                   <div className="flex justify-center md:gap-4 sm:gap-2">
                     <a href={project.link}>
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
-                        <span>Website</span>
+                        <span>Demo</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
                     </a>
