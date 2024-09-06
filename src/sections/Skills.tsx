@@ -3,10 +3,11 @@ import StarIcon from "@/assets/icons/star.svg";
 const skills = [
   "React.Js",
   "Next.Js",
-  "TailwindCSS",
+  "Tailwind CSS",
   "Node.Js",
   "Express.Js",
   "MongoDB",
+  "MySQL",
   "Firebase",
   "REST API",
   "TypeScript",
@@ -16,8 +17,11 @@ const skills = [
   "Git",
   "GitHub",
   "GitLab",
+  "Backend Development",
+  "Frontend Development",
+  "Full Stack Development",
 ];
-export const TapeSection = () => {
+export const Skills = () => {
   return (
     <div className="py-16 lg:py-24 overflow-x-clip ">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
