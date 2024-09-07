@@ -6,6 +6,7 @@ import hydroSenseImage from "@/assets/images/hydrosense.png";
 import agrisightImage from "@/assets/images/agrisight.png";
 import resepMakananImage from "@/assets/images/resepmakanan.png";
 import websiteDesaImage from "@/assets/images/websitedesa.png";
+import esafetyImage from "@/assets/images/esafety.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GithubIcon from "@/assets/icons/github.svg";
@@ -78,7 +79,7 @@ const portfolioProjects = [
     results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
     link: "",
     repository: "https://github.com/Aditypraa/Flutter-E-safety",
-    image: "",
+    image: esafetyImage,
   },
 
   {
