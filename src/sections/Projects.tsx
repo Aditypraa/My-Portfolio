@@ -1,4 +1,5 @@
 import Image from "next/image";
+import rickandMortyImage from "@/assets/images/rickandmorty.png"; //
 import artistryAgoraImage from "@/assets/images/Artistryagora.png";
 import miniProjectImage from "@/assets/images/miniproject.png";
 import hydroSenseImage from "@/assets/images/hydrosense.png";
@@ -12,6 +13,15 @@ import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 
 const portfolioProjects = [
+  {
+    company: "---",
+    year: "2024",
+    title: "Rick and Morty Wiki",
+    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
+    link: "rickandmorty-animasi.vercel.app",
+    repository: "https://github.com/Aditypraa/reactjs-rickandmorty",
+    image: rickandMortyImage,
+  },
   {
     company: "---",
     year: "2024",
