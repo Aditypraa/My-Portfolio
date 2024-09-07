@@ -101,13 +101,15 @@ const toolboxItems = [
 ];
 
 const hobbies = [
-  { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
-  { title: "Photography", emoji: "🥾", left: "50%", top: "5%" },
-  { title: "Gaming", emoji: "🌍", left: "10%", top: "35%" },
-  { title: "Hiking", emoji: "📸", left: "35%", top: "40%" },
-  { title: "Music", emoji: "🍳", left: "70%", top: "45%" },
-  { title: "Fitness", emoji: "🌱", left: "5%", top: "65%" },
-  { title: "Reading", emoji: "📚", left: "45%", top: "70%" },
+  { title: "Football", emoji: "⚽", left: "5%", top: "5%" },
+  { title: "Futsal", emoji: "⚽", left: "50%", top: "5%" },
+  { title: "Badminton", emoji: "🏸", left: "10%", top: "35%" },
+  { title: "Volly", emoji: "🏐", left: "45%", top: "40%" },
+  { title: "Tennis", emoji: "🏓", left: "70%", top: "35%" },
+  { title: "Reading", emoji: "📖", left: "45%", top: "70%" },
+  { title: "Basketball", emoji: "🏀", left: "5%", top: "65%" },
+  { title: "Gaming", emoji: "🎮", left: "75%", top: "65%" },
+  { title: "Billiard", emoji: "🎱", left: "75%", top: "5%" },
 ];
 
 export const AboutSection = () => {
@@ -151,10 +153,10 @@ export const AboutSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
             {/* Beyond the Code */}
-            <Card className="h-[320px] p-0 flex-col md:col-span-3 lg:col-span-2">
+            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
-                description="Explore my interests and hobbies beyond the digital realm"
+                description="Exploring my interests and hobbies outside the digital world, or maybe you can play with me"
                 className="px-6 py-6"
               />
               <div className="relative flex-1">
