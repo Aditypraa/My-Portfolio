@@ -1,6 +1,5 @@
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import StarIcon from "@/assets/icons/star.svg";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
@@ -67,7 +66,6 @@ export const AboutSection = () => {
               <CardHeader
                 title="My Reads"
                 description="Explore the Books shaping my perpectives."
-              // className="px-6 py-6"
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
                 <Image src={bookImage} alt="Book Cover" />
