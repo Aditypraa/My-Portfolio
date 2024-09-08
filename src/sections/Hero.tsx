@@ -1,3 +1,4 @@
+'use client';
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -5,6 +6,10 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbit from "@/components/HeroOrbit";
+import { motion } from "framer-motion";
+import GithubIcon from "@/assets/icons/github.svg";
+import LinkedInIcon from "@/assets/icons/linkedin.svg";
+import ButtonSocial from "@/components/ButtonSocial";
 
 export const HeroSection = () => {
   return (
@@ -20,15 +25,6 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
-
-        {
-          /* 
-           shouldOrbit?: boolean;
-            shouldSpin?: boolean, 
-            spinDuration?: string, 
-            orbitDuration?: string;
-          */
-        }
 
         <HeroOrbit size={430} rotation={-14} shouldOrbit orbitDuration="30s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-8 text-emerald-300/20" />
@@ -86,10 +82,22 @@ export const HeroSection = () => {
               Available for new Projects
             </div>
           </div>
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-lg mx-auto z-0">
             <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
               ADITYA PRATAMA
             </h1>
+
+            {/* Media Social  */}
+            <div className="flex flex-row justify-center items-center mt-4 gap-2">
+              <ButtonSocial url="https://github.com/Aditypraa" scaleTap={0.8} scaleHover={1.2} className="border-white/15 px-2 h-10 rounded-full">
+                <GithubIcon className="size-6" />
+              </ButtonSocial>
+              <ButtonSocial url="" scaleTap={0.8} scaleHover={1.2} className="border-white/15 px-2 h-10 rounded-full">
+                <LinkedInIcon className="size-6" />
+              </ButtonSocial>
+            </div>
+            {/* End Media Social */}
+
             <p className="mt-4 text-center text-white/60 md:text-lg">
               &quot; Talk is cheap, Show me the code &quot;
             </p>
@@ -97,16 +105,20 @@ export const HeroSection = () => {
               - Linus Torvalds -
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+
+
+          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-0">
+            <ButtonSocial url="" scaleTap={0.8} className="border-white/15 px-6 h-12 rounded-xl">
               <span className="font-semibold">Explore My Work</span>
               <ArrowDown className="size-4" />
-            </button>
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-              <span>👋</span>
-              <span className="font-semibold ">Lets Connect</span>
-            </button>
+            </ButtonSocial>
+            <ButtonSocial url="https://drive.google.com/file/d/10x2ygVvnCIehp2RslW76t6aiZnRfbCwG/view?usp=sharing" scaleTap={0.8} className="border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+              <span>📝</span>
+              <span className="font-semibold ">Curriculum Vitae</span>
+            </ButtonSocial>
           </div>
+
+
         </div>
       </div>
     </div>
