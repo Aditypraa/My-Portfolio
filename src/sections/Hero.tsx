@@ -90,7 +90,7 @@ export const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
             <div className="text-sm font-medium">
-              Available for new Projects
+              Open to Work
             </div>
           </motion.div>
 
