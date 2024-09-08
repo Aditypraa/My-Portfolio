@@ -6,10 +6,11 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbit from "@/components/HeroOrbit";
-import { motion } from "framer-motion";
 import GithubIcon from "@/assets/icons/github.svg";
 import LinkedInIcon from "@/assets/icons/linkedin.svg";
 import ButtonSocial from "@/components/ButtonSocial";
+import CvIcon from "@/assets/icons/cv.svg";
+import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -68,7 +69,17 @@ export const HeroSection = () => {
       </div>
 
       <div className="container">
-        <div className="flex flex-col items-center">
+        <motion.div className="flex flex-col items-center" initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001
+            }
+          }}>
           <Image
             src={memojiImage}
             className="size-[100px]"
@@ -108,18 +119,17 @@ export const HeroSection = () => {
 
 
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-0">
-            <ButtonSocial url="" scaleTap={0.8} className="border-white/15 px-6 h-12 rounded-xl">
+            {/* <ButtonSocial url="" scaleTap={0.8} className="border-white/15 px-6 h-12 rounded-xl">
               <span className="font-semibold">Explore My Work</span>
               <ArrowDown className="size-4" />
-            </ButtonSocial>
+            </ButtonSocial> */}
             <ButtonSocial url="https://drive.google.com/file/d/10x2ygVvnCIehp2RslW76t6aiZnRfbCwG/view?usp=sharing" scaleTap={0.8} className="border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-              <span>📝</span>
+              <CvIcon className="size-8" />
               <span className="font-semibold ">Curriculum Vitae</span>
             </ButtonSocial>
           </div>
 
-
-        </div>
+        </motion.div>
       </div>
     </div>
   );
