@@ -1,7 +1,6 @@
 'use client';
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
-import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
@@ -85,14 +84,16 @@ export const HeroSection = () => {
             className="size-[100px]"
             alt="Memoji on computer"
           />
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+
+          <motion.div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg" style={{ borderRadius: 30, boxShadow: "0px -300px 80px 100px rgba(255, 255, 235, .3)" }} animate={{ boxShadow: "0px -20px 80px 10px #fff" }} transition={{ duration: 2 }}>
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
             <div className="text-sm font-medium">
               Available for new Projects
             </div>
-          </div>
+          </motion.div>
+
           <div className="max-w-lg mx-auto z-0">
             <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
               ADITYA PRATAMA
