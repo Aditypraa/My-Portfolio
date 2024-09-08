@@ -99,8 +99,8 @@ export const ProjectsSection = () => {
       <div className="container">
         <SectionHeader
           title=" Real-world Results"
-          eyebrow="Projects"
-          description=" See how I transformed concepts into engaging digital experiences."
+          eyebrow="My Projects"
+          description="I want to invite you to take a look at some of the projects I've completed."
         />
 
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
