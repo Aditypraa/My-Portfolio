@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import TechIcon from "./TechIcon";
 import { twMerge } from "tailwind-merge";
 
@@ -25,7 +25,7 @@ function ToolboxItems({
         )}
       >
         {[...new Array(2)].fill(0).map((_, index) => (
-          <>
+          <Fragment key={index}>
             {items.map((item) => (
               <div
                 key={item.title}
@@ -35,7 +35,7 @@ function ToolboxItems({
                 <span className="font-semibold">{item.title}</span>
               </div>
             ))}
-          </>
+          </Fragment>
         ))}
       </div>
     </div>
