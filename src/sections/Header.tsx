@@ -9,9 +9,6 @@ export const Header = () => {
           Project
         </a>
         <a href="#" className="nav-item">
-          Experience
-        </a>
-        <a href="#" className="nav-item">
           About
         </a>
         <a
