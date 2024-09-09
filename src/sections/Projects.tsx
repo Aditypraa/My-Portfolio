@@ -1,97 +1,10 @@
 import Image from "next/image";
-import rickandMortyImage from "@/assets/images/rickandmorty.png"; //
-import artistryAgoraImage from "@/assets/images/Artistryagora.png";
-import miniProjectImage from "@/assets/images/miniproject.png";
-import hydroSenseImage from "@/assets/images/hydrosense.png";
-import agrisightImage from "@/assets/images/agrisight.png";
-import resepMakananImage from "@/assets/images/resepmakanan.png";
-import websiteDesaImage from "@/assets/images/websitedesa.png";
-import esafetyImage from "@/assets/images/esafety.png";
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import WebIcons from "@/assets/icons/webicons.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-
-const portfolioProjects = [
-  {
-    company: "---",
-    year: "2024",
-    title: "Rick and Morty Wiki",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "rickandmorty-animasi.vercel.app",
-    repository: "https://github.com/Aditypraa/reactjs-rickandmorty",
-    image: rickandMortyImage,
-  },
-  {
-    company: "---",
-    year: "2024",
-    title: "Artistry Agora",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "https://artistryagora.vercel.app",
-    repository: "https://github.com/Aditypraa/Nextjs-Landingpage-Artistryagora",
-    image: artistryAgoraImage,
-  },
-  {
-    company: "-----",
-    year: "2024",
-    title: "HydroSense",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "",
-    repository: "https://github.com/PalapaPixel",
-    image: hydroSenseImage,
-  },
-  {
-    company: "----",
-    year: "2023",
-    title: "Agrisight",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "",
-    repository: "https://github.com/Aditypraa/Agrisight",
-    image: agrisightImage,
-  },
-  {
-    company: "----",
-    year: "2023",
-    title: "Mini Project Ideas",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://aditypraa.github.io/Mini-Project",
-    repository: "https://github.com/Aditypraa/Mini-Project",
-    image: miniProjectImage,
-  },
-  {
-    company: "-----",
-    year: "2023",
-    title: "Website Desa",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "",
-    repository: "https://github.com/Aditypraa/Laravel-WebDesa",
-    image: websiteDesaImage,
-  },
-  {
-    company: "-----",
-    year: "2023",
-    title: "E Safety",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "",
-    repository: "https://github.com/Aditypraa/Flutter-E-safety",
-    image: esafetyImage,
-  },
-
-  {
-    company: "----",
-    year: "2022",
-    title: "Resep Makanan",
-    results: [{ title: "progres" }, { title: "progres" }, { title: "progres" }],
-    link: "",
-    repository: "https://github.com/Aditypraa/Flutter-ResepMakanan",
-    image: resepMakananImage,
-  },
-];
+import projectsData from "@/data/projectsData";
 
 export const ProjectsSection = () => {
   return (
@@ -104,12 +17,10 @@ export const ProjectsSection = () => {
         />
 
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
-          {portfolioProjects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-              style={{ top: `calc(64px + ${index * 40}px)` }}
-            >
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20">
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -130,24 +41,35 @@ export const ProjectsSection = () => {
                         key={index}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
-                        <span>{result.title}</span>
+                        {/* <CheckCircleIcon className="size-5 md:size-6" /> */}
+                        <span className="text-justify">{result.description}</span>
                       </li>
                     ))}
                   </ul>
 
-                  <div className="flex justify-center md:gap-4 sm:gap-2">
+                  <ul className="flex flex-row items-center justify-center gap-4 mt-4 md:mt-5">
+                    {project.technology.map((tech, index) => (
+                      <li
+                        key={index}
+                        className="flex gap-2 text-sm md:text-base text-white/50"
+                      >
+                        <tech.icon className="size-12 lg:size-12 md:size-12 sm:size-10" />
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="flex justify-center md:gap-4 sm:gap-2 max-[360px]:gap-2">
                     <a href={project.link}>
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
                         <span>Demo</span>
-                        <ArrowUpRightIcon className="size-4" />
+                        <WebIcons className="size-5 ml-2" />
                       </button>
                     </a>
 
                     <a href={project.repository}>
                       <button className="bg-black text-white-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
                         <span>GitHub</span>
-                        <GithubIcon className="size-4 ml-2" />
+                        <GithubIcon className="size-5 ml-2" />
                       </button>
                     </a>
                   </div>
