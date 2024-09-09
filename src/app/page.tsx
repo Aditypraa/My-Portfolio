@@ -1,5 +1,6 @@
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
+import EducationSection from "@/sections/Education";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection />
       <TapeSection />
+      <EducationSection />
       <WorkSection />
       <AboutSection />
       <ContactSection />
