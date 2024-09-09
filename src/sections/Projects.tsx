@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import WebIcons from "@/assets/icons/webicons.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import SectionHeader from "@/components/SectionHeader";
@@ -11,8 +10,8 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          title=" Real-world Results"
-          eyebrow="My Projects"
+          title="Projects"
+          eyebrow="Explore My Projects"
           description="I want to invite you to take a look at some of the projects I've completed."
         />
 
