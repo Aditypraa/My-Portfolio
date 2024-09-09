@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  <div className="flex justify-center md:gap-4 sm:gap-2 max-[360px]:gap-2">
+                  <div className="flex justify-center md:gap-4 sm:gap-2 max-[380px]:gap-2">
                     <a href={project.link}>
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
                         <span>Demo</span>
