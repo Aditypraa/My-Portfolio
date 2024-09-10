@@ -7,7 +7,7 @@ import projectsData from "@/data/projectsData";
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
         <SectionHeader
           title="Projects"
