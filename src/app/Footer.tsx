@@ -6,7 +6,7 @@ import FacebookIcon from '@/assets/icons/facebook.svg'
 import YoutubeIcon from '@/assets/icons/youtube.svg'
 
 const footerLinks = [
-  { title: 'LinkedIn', url: 'www.linkedin.com/in/aditypraa', icon: LinkedinIcon },
+  { title: 'LinkedIn', url: 'https://www.linkedin.com/in/aditypraa/', icon: LinkedinIcon },
   { title: 'Github', url: 'https://github.com/Aditypraa', icon: GithubIcon },
   { title: 'Instagram', url: 'https://www.instagram.com/aditypraa', icon: InstagramIcon },
   { title: 'Youtube', url: 'https://www.youtube.com/@adityapraetama', icon: YoutubeIcon },
