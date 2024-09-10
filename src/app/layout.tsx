@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import "./globals.css";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -32,7 +34,9 @@ export default function RootLayout({
           "bg-gray-900 text-white antialiased font-sans"
         )}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
