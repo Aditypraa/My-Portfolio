@@ -104,7 +104,7 @@ export const HeroSection = () => {
               <ButtonSocial url="https://github.com/Aditypraa" scaleTap={0.8} scaleHover={1.2} className="border-white/15 px-2 h-10 rounded-full">
                 <GithubIcon className="size-6" />
               </ButtonSocial>
-              <ButtonSocial url="" scaleTap={0.8} scaleHover={1.2} className="border-white/15 px-2 h-10 rounded-full">
+              <ButtonSocial url="https://www.linkedin.com/in/aditypraa/" scaleTap={0.8} scaleHover={1.2} className="border-white/15 px-2 h-10 rounded-full">
                 <LinkedInIcon className="size-6" />
               </ButtonSocial>
             </div>
