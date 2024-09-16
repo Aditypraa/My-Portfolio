@@ -1,8 +1,8 @@
-import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
-import Card from "@/components/Card";
-import worksData from "@/data/worksData";
-import { Fragment } from "react";
+import SectionHeader from '@/components/SectionHeader';
+import Image from 'next/image';
+import Card from '@/components/Card';
+import worksData from '@/data/worksData';
+import { Fragment } from 'react';
 
 export const WorkSection = () => {
   return (
@@ -36,9 +36,7 @@ export const WorkSection = () => {
                         <div className="text-md text-white/40">
                           {work.position}
                         </div>
-                        <div className="text-sm text-white/40">
-                          {work.date}
-                        </div>
+                        <div className="text-sm text-white/40">{work.date}</div>
                       </div>
                     </div>
                     <ul className="flex flex-col gap-4 mt-4 md:mt-5">

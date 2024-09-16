@@ -1,9 +1,9 @@
-import Image from "next/image";
-import WebIcons from "@/assets/icons/webicons.svg";
-import GithubIcon from "@/assets/icons/github.svg";
-import SectionHeader from "@/components/SectionHeader";
-import Card from "@/components/Card";
-import projectsData from "@/data/projectsData";
+import Image from 'next/image';
+import WebIcons from '@/assets/icons/webicons.svg';
+import GithubIcon from '@/assets/icons/github.svg';
+import SectionHeader from '@/components/SectionHeader';
+import Card from '@/components/Card';
+import projectsData from '@/data/projectsData';
 
 export const ProjectsSection = () => {
   return (
@@ -19,7 +19,8 @@ export const ProjectsSection = () => {
           {projectsData.map((project, index) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20">
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+            >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -41,7 +42,9 @@ export const ProjectsSection = () => {
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
                         {/* <CheckCircleIcon className="size-5 md:size-6" /> */}
-                        <span className="text-justify">{result.description}</span>
+                        <span className="text-justify">
+                          {result.description}
+                        </span>
                       </li>
                     ))}
                   </ul>

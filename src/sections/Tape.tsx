@@ -1,15 +1,15 @@
-import StarIcon from "@/assets/icons/star.svg";
-import { Fragment } from "react";
+import StarIcon from '@/assets/icons/star.svg';
+import { Fragment } from 'react';
 
 const roles = [
-  "Web Development",
-  "Frontend Development",
-  "Backend Development",
-  "Fullstack Development",
-  "Software Engineering",
-  "Software Development",
-  "Cloud Computing",
-  "IT Support Specialist",
+  'Web Development',
+  'Frontend Development',
+  'Backend Development',
+  'Fullstack Development',
+  'Software Engineering',
+  'Software Development',
+  'Cloud Computing',
+  'IT Support Specialist',
 ];
 export const TapeSection = () => {
   return (

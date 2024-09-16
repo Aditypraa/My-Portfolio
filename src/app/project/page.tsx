@@ -1,10 +1,8 @@
-import { ProjectsSection } from '@/sections/Projects'
-import React from 'react'
+import { ProjectsSection } from '@/sections/Projects';
+import React from 'react';
 
 function ProjectPage() {
-    return (
-        <ProjectsSection />
-    )
+  return <ProjectsSection />;
 }
 
-export default ProjectPage
+export default ProjectPage;

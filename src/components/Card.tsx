@@ -1,6 +1,6 @@
-import React, { ComponentPropsWithoutRef, PropsWithChildren } from "react";
-import grainImage from "@/assets/images/grain.jpg";
-import { twMerge } from "tailwind-merge";
+import React, { ComponentPropsWithoutRef, PropsWithChildren } from 'react';
+import grainImage from '@/assets/images/grain.jpg';
+import { twMerge } from 'tailwind-merge';
 
 function Card({
   className,

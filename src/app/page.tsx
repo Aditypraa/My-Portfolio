@@ -1,5 +1,5 @@
-import { ContactMeSection } from "@/sections/ContactMe";
-import { HeroSection } from "@/sections/Hero";
+import { ContactMeSection } from '@/sections/ContactMe';
+import { HeroSection } from '@/sections/Hero';
 
 export default function Home() {
   return (
