@@ -6,6 +6,33 @@ import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
 import projectsData from '@/data/projectsData';
 import Button from '@/components/Button';
+import { motion } from 'framer-motion';
+
+const cardVariant = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0, x: 100 },
+};
+
+const cardTransition = {
+  // initial={{ opacity: 0, scale: 0.2 }}
+  // animate = {{ opacity: 1, scale: 1 }}
+  // transition = {{
+  //   duration: 2.0,
+  //     delay: 0.4,
+  //       ease: [0, 0.71, 0.2, 1.01]
+  // }}
+
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 2.0,
+      delay: 0.4,
+      ease: [0, 0.71, 0.2, 1.01],
+    },
+  },
+};
 
 export const ProjectsSection = () => {
   return (
@@ -22,8 +49,13 @@ export const ProjectsSection = () => {
             <Card
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              variants={cardVariant}
+              initial="hidden"
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+              <motion.div
+                className="lg:grid lg:grid-cols-2 lg:gap-16"
+                variants={cardTransition}
+              >
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
@@ -92,7 +124,7 @@ export const ProjectsSection = () => {
                     className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
-              </div>
+              </motion.div>
             </Card>
           ))}
         </div>

@@ -119,12 +119,12 @@ export const HeroSection = () => {
       <div className="container">
         <motion.div
           className="flex flex-col items-center"
-          initial={{ opacity: 0, scale: 0.2 }}
+          initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 2.0,
             delay: 0.3,
-            ease: [0, 0.71, 0.2, 1.01]
+            ease: [0, 0.71, 0.2, 1.01],
           }}
         >
           <Image
