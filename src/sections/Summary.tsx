@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import sampulImage from '@/assets/images/Sampul-HD.png';
+import sampulImage from '@/assets/images/Sampul.png';
 import fotoProfil from '@/assets/images/Ap.png';
 
 function SummarySection() {
