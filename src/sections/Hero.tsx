@@ -7,7 +7,7 @@ import SparkleIcon from '@/assets/icons/sparkle.svg';
 import HeroOrbit from '@/components/HeroOrbit';
 import GithubIcon from '@/assets/icons/github.svg';
 import LinkedInIcon from '@/assets/icons/linkedin.svg';
-import ButtonSocial from '@/components/ButtonSocial';
+import Button from '@/components/Button';
 import CvIcon from '@/assets/icons/cv.svg';
 import { motion } from 'framer-motion';
 
@@ -160,22 +160,22 @@ export const HeroSection = () => {
 
             {/* Media Social  */}
             <div className="flex flex-row justify-center items-center mt-4 gap-2">
-              <ButtonSocial
+              <Button
                 url="https://github.com/Aditypraa"
                 scaleTap={0.8}
                 scaleHover={1.2}
                 className="border-white/15 px-2 h-10 rounded-full"
               >
                 <GithubIcon className="size-6" />
-              </ButtonSocial>
-              <ButtonSocial
+              </Button>
+              <Button
                 url="https://www.linkedin.com/in/aditypraa/"
                 scaleTap={0.8}
                 scaleHover={1.2}
                 className="border-white/15 px-2 h-10 rounded-full"
               >
                 <LinkedInIcon className="size-6" />
-              </ButtonSocial>
+              </Button>
             </div>
             {/* End Media Social */}
 
@@ -192,14 +192,15 @@ export const HeroSection = () => {
               <span className="font-semibold">Explore My Work</span>
               <ArrowDown className="size-4" />
             </ButtonSocial> */}
-            <ButtonSocial
+            <Button
               url="https://drive.google.com/file/d/10x2ygVvnCIehp2RslW76t6aiZnRfbCwG/view?usp=sharing"
               scaleTap={0.8}
+              scaleHover={1.1}
               className="border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
             >
               <CvIcon className="size-8" />
               <span className="font-semibold ">Curriculum Vitae</span>
-            </ButtonSocial>
+            </Button>
           </div>
         </motion.div>
       </div>

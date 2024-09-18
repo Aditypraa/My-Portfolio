@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { twMerge } from 'tailwind-merge';
 
-function ButtonSocial({
+function Button({
   children,
   url,
   className,
@@ -29,4 +29,4 @@ function ButtonSocial({
   );
 }
 
-export default ButtonSocial;
+export default Button;

@@ -1,9 +1,11 @@
+'use client';
 import Image from 'next/image';
 import WebIcons from '@/assets/icons/webicons.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
 import projectsData from '@/data/projectsData';
+import Button from '@/components/Button';
 
 export const ProjectsSection = () => {
   return (
@@ -61,19 +63,25 @@ export const ProjectsSection = () => {
                   </ul>
 
                   <div className="flex justify-center md:gap-4 sm:gap-2 max-[380px]:gap-2">
-                    <a href={project.link}>
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
-                        <span>Demo</span>
-                        <WebIcons className="size-5 ml-2" />
-                      </button>
-                    </a>
+                    <Button
+                      url={project.link}
+                      scaleTap={0.8}
+                      scaleHover={1.1}
+                      className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8"
+                    >
+                      <span>Demo</span>
+                      <WebIcons className="size-5 ml-2" />
+                    </Button>
 
-                    <a href={project.repository}>
-                      <button className="bg-black text-white-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8">
-                        <span>GitHub</span>
-                        <GithubIcon className="size-5 ml-2" />
-                      </button>
-                    </a>
+                    <Button
+                      url={project.repository}
+                      scaleTap={0.8}
+                      scaleHover={1.1}
+                      className="bg-black text-white-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center mt-8 border border-black"
+                    >
+                      <span>GitHub</span>
+                      <GithubIcon className="size-5 ml-2" />
+                    </Button>
                   </div>
                 </div>
 

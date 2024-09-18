@@ -6,7 +6,7 @@ import Image from 'next/image';
 import mapImage from '@/assets/images/map.png';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import CardHeader from '@/components/CardHeader';
-import ToolboxItems from '@/components/ToolboxItems';
+import ToolboxItems from '@/components/ToolBoxItems';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { hobbies } from '@/data/hobbiesData';

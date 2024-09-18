@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import TechIcon from './TechIcon';
+import TechIcon from '../TechIcon';
 import { twMerge } from 'tailwind-merge';
 
 function ToolboxItems({
