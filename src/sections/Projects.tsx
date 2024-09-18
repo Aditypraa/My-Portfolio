@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
         <SectionHeader
           title="Projects"
           eyebrow="Explore My Projects"
-          description="I want to invite you to take a look at some of the projects I've completed."
+          description="I invite you to look at some of the projects I've been developing and completing."
         />
 
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
