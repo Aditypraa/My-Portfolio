@@ -7,12 +7,12 @@ import MysqlIcon from '@/assets/icons/mysql.svg';
 import MongodbIcon from '@/assets/icons/mongodb.svg';
 import GitIcons from '@/assets/icons/git.svg';
 import GithubIcon from '@/assets/icons/github.svg';
-import ExpressIcon from '@/assets/icons/express.svg';
+import ExpressIcon from '@/assets/icons/express-original.svg';
 import NodeIcon from '@/assets/icons/nodejs.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import NextjsIcon from '@/assets/icons/nextjs.svg';
 import DockerIcon from '@/assets/icons/docker.svg';
-import GcpIcon from '@/assets/icons/googlecloud.svg';
+import GcpIcon from '@/assets/icons/googlecloud-original.svg';
 import LinuxIcon from '@/assets/icons/linux.svg';
 import UbuntuIcon from '@/assets/icons/ubuntu.svg';
 import WindowsIcon from '@/assets/icons/windows.svg';
@@ -75,7 +75,7 @@ export const toolboxItems = [
     iconType: DockerIcon,
   },
   {
-    title: 'Google Cloud Platform',
+    title: 'Google Cloud',
     iconType: GcpIcon,
   },
   {
