@@ -1,3 +1,5 @@
+'use client';
+import Button from '@/components/Button';
 import SectionHeader from '@/components/SectionHeader';
 import React from 'react';
 
@@ -64,9 +66,12 @@ function FeedbackSection() {
                 </div>
               </div>
               <div className="p-2 w-full z-20">
-                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Button
-                </button>
+                <Button
+                  scaleTap={0.8}
+                  className="flex mx-auto text-white bg-gradient-to-r from-emerald-300/20 to-sky-400 border-0 py-2 px-8 focus:outline-none hover:bg-emerald-300 rounded text-lg"
+                >
+                  <span>Send</span>
+                </Button>
               </div>
               {/* <div className="p-2 w-full pt-8 mt-8  text-center"> */}
               {/* <a className="text-indigo-500">example@email.com</a>
