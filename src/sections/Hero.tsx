@@ -9,7 +9,7 @@ import GithubIcon from '@/assets/icons/github.svg';
 import LinkedInIcon from '@/assets/icons/linkedin.svg';
 import Button from '@/components/Button';
 import CvIcon from '@/assets/icons/cv.svg';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 
 export const HeroSection = () => {
   return (
@@ -119,17 +119,12 @@ export const HeroSection = () => {
       <div className="container">
         <motion.div
           className="flex flex-col items-center"
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, scale: 0.2 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.3,
-            ease: [0, 0.71, 0.2, 1.01],
-            scale: {
-              type: 'spring',
-              damping: 5,
-              stiffness: 100,
-              restDelta: 0.001,
-            },
+            duration: 2.0,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01]
           }}
         >
           <Image
@@ -142,10 +137,10 @@ export const HeroSection = () => {
             className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg"
             style={{
               borderRadius: 30,
-              boxShadow: '0px -1000px 80px 100px rgba(255, 255, 235, .3)',
+              boxShadow: '0px -3000px 80px 100px rgba(255, 255, 235, .3)',
             }}
             animate={{ boxShadow: '0px -20px 80px 10px #fff' }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 3 }}
           >
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
