@@ -1,5 +1,6 @@
 'use client';
 import Button from '@/components/Button';
+import FormLabel from '@/components/Form';
 import SectionHeader from '@/components/SectionHeader';
 import React from 'react';
 
@@ -17,40 +18,38 @@ function FeedbackSection() {
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label htmlFor="name" className="leading-7 text-sm">
-                    Name
-                  </label>
-                  <input
+                  <FormLabel
+                    htmlFor="name"
+                    labelName="Name"
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-gray-100/30 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:text-black focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full rounded border text-base outline-none text-black py-1 px-3 leading-8 "
                   />
                 </div>
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label htmlFor="email" className="leading-7 text-sm">
-                    Email
-                  </label>
-                  <input
+                  <FormLabel
+                    htmlFor="email"
+                    labelName="Email"
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-gray-100/30 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:text-black focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full rounded border text-base outline-none text-black py-1 px-3 leading-8 "
                   />
                 </div>
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
-                  <label htmlFor="message" className="leading-7 text-sm">
-                    Subject
-                  </label>
-                  <input
-                    id="message"
-                    name="message"
-                    className="w-full bg-gray-100/30 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:text-black focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 resize-none leading-8 transition-colors duration-200 ease-in-out"
-                  ></input>
+                  <FormLabel
+                    htmlFor="subject"
+                    labelName="Subject"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    className="w-full rounded border text-base outline-none text-black py-1 px-3 leading-8 "
+                  />
                 </div>
               </div>
               <div className="p-2 w-full">
@@ -61,7 +60,8 @@ function FeedbackSection() {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100/30 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:text-black focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-300 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-opacity-50 rounded border border-blatext-black focus:border-indigo-500 focus:bg-white focus:text-black focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 leading-6 transition-colors duration-200 ease-in-out"
+                    style={{ resize: 'both' }}
                   ></textarea>
                 </div>
               </div>

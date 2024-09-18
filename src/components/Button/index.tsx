@@ -23,17 +23,22 @@ function Button({
           <motion.button
             whileTap={{ scale: scaleTap }}
             whileHover={{ scale: scaleHover }}
-            className={twMerge('inline-flex items-center gap-2 border', className)}
+            className={twMerge(
+              'inline-flex items-center gap-2 border',
+              className
+            )}
           >
             {children}
           </motion.button>
         </Link>
-
       ) : (
         <motion.button
           whileTap={{ scale: scaleTap }}
           whileHover={{ scale: scaleHover }}
-          className={twMerge('inline-flex items-center gap-2 border', className)}
+          className={twMerge(
+            'inline-flex items-center gap-2 border',
+            className
+          )}
         >
           {children}
         </motion.button>
