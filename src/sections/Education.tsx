@@ -1,6 +1,8 @@
+'use client';
 import SectionHeader from '@/components/SectionHeader';
 import React from 'react';
 import educationsData from '@/data/educationsData';
+import { motion } from 'framer-motion';
 
 function EducationSection() {
   return (
@@ -15,9 +17,12 @@ function EducationSection() {
 
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
             {educationsData.map((education, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1 } }}
+                whileHover={{ scale: 1.05, boxShadow: '0px 5px 8px #6ee7b7' }}
+                className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-emerald-300/20 hover:shadow-emerald-300/20"
               >
                 <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
                   <education.avatar className="size-10" />
@@ -29,7 +34,7 @@ function EducationSection() {
 
                 <p className="mt-1 text-sm text-gray-300">{education.title}</p>
                 <p className="mt-1 text-sm text-gray-300">{education.year}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
