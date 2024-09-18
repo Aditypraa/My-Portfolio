@@ -40,7 +40,7 @@ const projectsData = [
     results: [
       {
         description:
-          'I developed a Rick & Morty character wiki project using React JS. The wiki features search, filter, pagination, and dynamic character pages. Character data is fetched from the Rick & Morty API, and Bootstrap is used for styling.',
+          'I have developed a Website called Rick & Morty using the React J.S. Framework. This website allows fans of this cartoon to easily search for and find various characters from the animated series.',
       },
     ],
     technology: [
@@ -59,7 +59,10 @@ const projectsData = [
     year: '2024',
     title: 'Artistry Agora',
     results: [
-      { description: 'Website for Art exhibition information and ticketing' },
+      {
+        description:
+          'I named it Artistry Agora, a Website for art exhibition information and ticketing. This Website aims to make it easier for artists and art lovers to create and find centralized art events on one Website.',
+      },
     ],
     technology: [
       { icon: MongodbIcon },
@@ -80,7 +83,7 @@ const projectsData = [
     results: [
       {
         description:
-          'This farm management website helps users easily manage hydroponics and provides articles on farming.',
+          'This Website is designed to help urban farmers by providing educational resources through the Hydropedia feature, making it easier for them to manage their crops. Future updates will include tools for plant care, such as automated watering schedules and harvest time predictions.',
       },
     ],
     technology: [
@@ -100,10 +103,7 @@ const projectsData = [
     title: 'Agrisight',
     results: [
       {
-        description: `Agrisight is an innovative project that aims to address the challenges of soil identification and crop
-  recommendation in agriculture. Using computer vision, Agrisight intends to revolutionize agriculture by
-  enabling users to accurately identify soil types and receive customized crop recommendations through
-  simple photo uploads.`,
+        description: `Agrisight is a cutting-edge project designed to tackle the challenges of soil identification and crop recommendations in modern agriculture. By leveraging advanced computer vision technology, Agrisight empowers users to determine soil types accurately and receive personalized crop suggestions simply by uploading a photo, transforming farmers' decision-making and optimizing agricultural productivity.`,
       },
     ],
     technology: [
@@ -123,11 +123,7 @@ const projectsData = [
     results: [
       {
         description:
-          'This project highlights my proficiency in web development through a variety of techniques, from basic to advanced.',
-      },
-      {
-        description:
-          'Each project demonstrates my ability to apply various frameworks and technologies, reflecting the practical skills I have acquired and honed.',
+          'This project showcases my web development expertise, utilizing various techniques from foundational to advanced levels. Each project illustrates my ability to implement diverse frameworks and technologies, demonstrating the practical skills I have mastered and continuously refined.',
       },
     ],
     technology: [
@@ -146,7 +142,10 @@ const projectsData = [
     year: '2023',
     title: 'Website Desa',
     results: [
-      { description: 'A website to display a list of villages in Lamongan.' },
+      {
+        description:
+          'I created this Website to display a list of villages and sub-districts in Lamongan Regency, East Java Province. This Website was developed using the Laravel Framework with the MySql database.',
+      },
     ],
     technology: [{ icon: LaravelIcon }, { icon: MysqlIcon }],
     link: '#',
@@ -158,7 +157,10 @@ const projectsData = [
     year: '2023',
     title: 'E Safety',
     results: [
-      { description: 'Electronic Whistleblowing Application for workers.' },
+      {
+        description:
+          'The name of this application is E-Safety. This is my internship project that I worked on with my friend. This application aims to report employee violations in the form of images that are photographed directly or uploaded.',
+      },
     ],
     technology: [
       { icon: LaravelIcon },
@@ -174,7 +176,12 @@ const projectsData = [
     company: 'Personal Project',
     year: '2022',
     title: 'Resep Makanan',
-    results: [{ description: 'Application to Display Various Food Recipes.' }],
+    results: [
+      {
+        description:
+          'Food Recipes is a tutorial application that provides video and written guides for making the food you are looking for. This application is developed using the Flutter framework and integrated with external APIs.',
+      },
+    ],
     technology: [{ icon: FlutterIcon }],
     link: '#',
     repository: 'https://github.com/Aditypraa/Flutter-ResepMakanan',
