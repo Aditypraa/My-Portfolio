@@ -9,8 +9,13 @@ import Button from '@/components/Button';
 import { motion } from 'framer-motion';
 
 const cardVariant = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0, x: 100 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    transition: { type: 'spring', stiffness: 50, duration: 0.5 },
+  },
 };
 
 const cardTransition = {
@@ -22,13 +27,13 @@ const cardTransition = {
   //       ease: [0, 0.71, 0.2, 1.01]
   // }}
 
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.8, stiffness: 50, duration: 0.5 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
       duration: 2.0,
-      delay: 0.4,
+      delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01],
     },
   },

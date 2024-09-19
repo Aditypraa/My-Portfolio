@@ -123,6 +123,7 @@ export const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 2.0,
+            stiffness: 50,
             delay: 0.3,
             ease: [0, 0.71, 0.2, 1.01],
           }}
@@ -140,7 +141,7 @@ export const HeroSection = () => {
               boxShadow: '0px -3000px 80px 100px rgba(255, 255, 235, .3)',
             }}
             animate={{ boxShadow: '0px -20px 80px 10px #fff' }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2, stiffness: 50 }}
           >
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
