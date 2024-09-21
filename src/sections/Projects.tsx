@@ -94,12 +94,12 @@ export const ProjectsSection = () => {
                         key={index}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <tech.icon className="size-12 lg:size-12 md:size-12 sm:size-10" />
+                        <tech.icon className="size-12 lg:size-12 md:size-12 sm:size-10 max-sm:size-10" />
                       </li>
                     ))}
                   </ul>
 
-                  <div className="flex justify-center md:gap-4 sm:gap-2 max-[380px]:gap-2">
+                  <div className="flex justify-center md:gap-4 sm:gap-2 max-sm:gap-2">
                     <Button
                       url={project.link}
                       scaleTap={0.8}

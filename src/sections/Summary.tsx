@@ -39,7 +39,7 @@ function SummarySection() {
                 <p className="font-serif text-base">Web Developer</p>
               </div>
             </div>
-            <div className="flex items-center justify-center  sm:mt-4 sm:pt-4 max-[380px]:mt-4 max-[380px]:pt-4">
+            <div className="flex items-center justify-center  sm:mt-4 sm:pt-4 max-sm:mt-4 max-sm:pt-4">
               <p className="text-justify text-base">
                 I am a Fresh Graduate with a Bachelor`s degree in Informatics
                 Engineering from, the Universitas 17 Agustus 1945 Surabaya, with

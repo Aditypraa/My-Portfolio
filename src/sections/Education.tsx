@@ -28,7 +28,7 @@ function EducationSection() {
                   <education.avatar className="size-10" />
                 </div>
 
-                <h2 className="mt-4 text-xl max-[380px]:text-sm sm:text-sm md:text-xl font-bold text-white">
+                <h2 className="mt-4 text-xl max-sm:text-sm sm:text-sm md:text-xl font-bold text-white">
                   {education.major}
                 </h2>
 
